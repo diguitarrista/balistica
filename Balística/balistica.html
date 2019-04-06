@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+		<meta charset="UTF-8">
+		<title>Balística</title>
+		<link rel="stylesheet" type="text/css" href="css/balistica.css">
+
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Balística</h1>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+				<h2>Dados do Problema</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Ângulo (graus)</th>
+							<th>Altura (m)</th>
+							<th>Distância (m)</th>
+              <th>Velocidade Inicial (m/s)</th>
+              <th>Velocidade em X (m/s)</th>
+              <th>Velocidade Inicial em Y (m/s)</th>
+              <th>Tempo de Subida (s)</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-dados">
+						<tr class="calculo">
+				      <td class="info-angulo"></td>
+							<td class="info-altura"></td>
+							<td class="info-distancia"></td>
+              <td class="info-velocidadeinicial"></td>
+              <td class="info-velocidadeX"></td>
+							<td class="info-velocidadeinicialY"></td>
+              <td class="info-tempoSubida"></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+
+    <section class="container">
+		    <h2 id="titulo-form">Adicionar valores iniciais</h2>
+		    <form id="form-adiciona">
+		        <div class="grupo">
+		            <label for="angulo">Angulo:</label>
+		            <input id="angulo" name="angulo" type="text" placeholder="digite o ângulo de lançamento Teta" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="velocidadeo">Altura:</label>
+		            <input id="altura" name="altura" type="text" placeholder="digite a altura H" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="distancia">Distancia:</label>
+		            <input id="distancia" name="distancia" type="text" placeholder="digite a distância D" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-calculo" class="botao bto-principal">Calcular</button>
+		    </form>
+		</section>
+
+
+    <script src="js/adiciona-Dados.js" ></script>
+    <script src="js/calculos.js" ></script>
+
+  </body>
